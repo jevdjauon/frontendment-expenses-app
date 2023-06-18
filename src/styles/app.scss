@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+}
+
+$Mobile: 420px;
+$Desktop: 1440px;
+
+$SoftRed: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+$DarkBrown: hsl(25, 47%, 15%);
+$MediumBrown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$VeryPaleOrange: hsl(33, 100%, 98%);
+
+body {
+  background-color: $Cream;
+  display: grid;
+  place-items: center;
+}
+
+.app-container {
+  width: 360px;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: $Mobile) {
+  .app-container {
+    width: 450px;
+  }
+}

@@ -1,0 +1,51 @@
+$Mobile: 375px;
+$Desktop: 1440px;
+
+$SoftRed: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+$DarkBrown: hsl(25, 47%, 15%);
+$MediumBrownFull: rgba(150, 138, 128);
+$MediumBrown: rgba(150, 138, 128, 0.6);
+$Cream: hsl(27, 66%, 92%);
+$VeryPaleOrange: hsl(33, 100%, 98%);
+
+.spending-container {
+  background-color: white;
+  height: 40vh;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h1 {
+    font-size: 25px;
+    color: $DarkBrown;
+  }
+  .divider {
+    border: 1px solid $MediumBrown;
+    width: 100%;
+  }
+  .total {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .this-month {
+      p {
+        color: $MediumBrownFull;
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 35px;
+      }
+    }
+    .last-month {
+      text-align: end;
+      p {
+        color: $MediumBrownFull;
+        font-size: 14px;
+      }
+    }
+  }
+}

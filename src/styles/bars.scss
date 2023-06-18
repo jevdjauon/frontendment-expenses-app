@@ -1,0 +1,49 @@
+$SoftRed: #ec775f;
+$Cyan: hsl(186, 34%, 60%);
+$MediumBrown: hsl(28, 10%, 53%);
+$DarkBrown: hsl(25, 47%, 15%);
+
+.bars-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 200px;
+  .bar {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    cursor: pointer;
+
+    p {
+      color: $MediumBrown;
+      margin-top: 0.6rem;
+      font-size: 12px;
+    }
+    .value {
+      opacity: 0;
+      font-size: 12px;
+      background-color: $DarkBrown;
+      color: white;
+      text-align: center;
+      padding: 3px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .standard {
+      border-radius: 5px;
+      background-color: $SoftRed;
+    }
+    .biggest {
+      border-radius: 5px;
+      background-color: $Cyan !important;
+    }
+    &:hover {
+      .value {
+        opacity: 1;
+        transition: all 0.3s ease-in;
+      }
+    }
+  }
+}
